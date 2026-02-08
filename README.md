@@ -81,7 +81,7 @@ src/
 ### Installation
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Kartiik7/codolio-question-management-spa
 cd codolio-task-interactive-question-sheet
 npm install
 ```
@@ -100,6 +100,8 @@ http://localhost:5173
 
 ## 🌐 Live Demo
 [https://codoliotask.kartikpatel.tech](https://codoliotask.kartikpatel.tech)
+or 
+[https://codoliotask-question-sheet.netlify.app/](https://codoliotask-question-sheet.netlify.app/)
 
 ---
 

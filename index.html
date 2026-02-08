@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>questions_sheet_spa</title>
+  </head>
+  <body>
+    <style>
+      .app-loader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #f9fafb; /* gray-50 */
+        font-family: system-ui, -apple-system, sans-serif;
+      }
+      @media (prefers-color-scheme: dark) {
+        .app-loader {
+          background-color: #18181b; /* zinc-900 */
+          color: #f3f4f6;
+        }
+      }
+      .loader-spinner {
+        width: 40px;
+        height: 40px;
+        border: 4px solid #e0e7ff; /* indigo-100 */
+        border-top: 4px solid #6366f1; /* indigo-500 */
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .loader-text {
+        margin-top: 1rem;
+        font-size: 0.875rem;
+        color: #6b7280; /* gray-500 */
+        font-weight: 500;
+      }
+      @media (prefers-color-scheme: dark) {
+        .loader-text {
+          color: #9ca3af; /* gray-400 */
+        }
+      }
+    </style>
+    <div id="root">
+      <div class="app-loader">
+        <div class="loader-spinner"></div>
+        <p class="loader-text">Loading...</p>
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
